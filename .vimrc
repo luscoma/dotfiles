@@ -7,6 +7,7 @@ call vundle#begin()
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 call vundle#end()       
 
 " Base Configuration
