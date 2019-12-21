@@ -14,6 +14,7 @@ syntax on
 set shell=/bin/bash  " I use fish so use bash from vim
 set number
 colorscheme dracula
+set fo+=j  " remove comment leader when joining comments
 
 " 80 character wrap and marker
 set wrap linebreak
