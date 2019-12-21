@@ -12,7 +12,10 @@ call vundle#end()
 filetype plugin indent on
 syntax on
 set shell=/bin/bash  " I use fish so use bash from vim
-
-" My Configuration Start
 set number
 colorscheme dracula
+
+" 80 character wrap and marker
+set wrap linebreak
+set colorcolumn=80
+set textwidth=80
