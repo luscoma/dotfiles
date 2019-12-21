@@ -14,3 +14,10 @@
 !.config/fish/config.fish
 !.config/fish/functions
 !.config/fish/functions/fish_prompt.fish
+
+# ~/.config/coc
+!.config
+!.config/coc
+!.config/coc/extensions
+!.config/coc/extensions/package.json
+!.config/coc/extensions/README.md
