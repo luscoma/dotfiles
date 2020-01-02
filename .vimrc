@@ -10,6 +10,7 @@ Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'tomtom/tcomment_vim'
 Plugin 'wincent/command-t'
+Plugin 'scrooloose/nerdtree'
 call vundle#end()       
 
 " Base Configuration
