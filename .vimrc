@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'tomtom/tcomment_vim'
+Plugin 'wincent/command-t'
 call vundle#end()       
 
 " Base Configuration
@@ -18,6 +19,7 @@ set shell=/bin/bash  " I use fish so use bash from vim
 set number
 colorscheme dracula
 set fo+=j  " remove comment leader when joining comments
+set fo-=o  " don't insert the comment symbol on o & O
 set incsearch
 set ruler
 
@@ -31,4 +33,8 @@ set expandtab		" Expand tabs to spaces
 set tabstop=8		" Tab characters display as 8 spaces
 set softtabstop=2       " Pressing tab inserts 2 spaces
 set shiftwidth=2	" shifing << and >> insert 2 spaces
+
+" Custom Key Bindings
+nnoremap <Leader>[  :tabprev<CR>
+nnoremap <Leader>]  :tabnext<CR>
 
