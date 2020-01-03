@@ -7,6 +7,7 @@
 !.vimrc
 !.dircolors
 !.tmux.conf
+!.pryrc
 
 # ~/.config/fish
 !.config
