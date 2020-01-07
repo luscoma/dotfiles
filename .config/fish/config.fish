@@ -12,5 +12,9 @@ fundle init
 function fish_right_prompt -d "Write out the right prompt"
   date '+%H:%M'
 end
-eval (dircolors -c ~/.dircolors)
+
+# Load colors if we're on linux and need to
+if which dircolors > /dev/null
+  eval (dircolors -c ~/.dircolors)
+end
 fish_vi_key_bindings
