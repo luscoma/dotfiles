@@ -5,6 +5,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'dag/vim-fish'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
@@ -38,4 +39,3 @@ set shiftwidth=2	" shifing << and >> insert 2 spaces
 " Custom Key Bindings
 nnoremap <Leader>[  :tabprev<CR>
 nnoremap <Leader>]  :tabnext<CR>
-
