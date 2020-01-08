@@ -1,5 +1,5 @@
 # User binaries that should be part of the path
-set PATH $PATH ~/bin
+if not contains ~/bin $PATH; set -a PATH ~/bin; end
 set -x EDITOR vim
 
 # Plugin management (Auto Install Fundle :o)
