@@ -26,6 +26,7 @@ set fo+=j  " remove comment leader when joining comments
 set fo-=o  " don't insert the comment symbol on o & O
 set incsearch
 set ruler
+set backspace=indent,eol,start
 
 " 80 character wrap and marker
 set wrap linebreak
