@@ -19,3 +19,9 @@ if which dircolors > /dev/null
   eval (dircolors -c ~/.dircolors)
 end
 fish_vi_key_bindings
+
+# Configure done to exclude certain commands
+set -l exclude_commands '(git (?!push|pull))'  # All gits but push pull
+set -a exclude_commands '(vim)'
+set -U __done_exclude (string join '|' $exclude_commands)
+

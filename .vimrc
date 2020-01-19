@@ -27,6 +27,7 @@ set fo-=o  " don't insert the comment symbol on o & O
 set incsearch
 set ruler
 set backspace=indent,eol,start
+set laststatus=2
 
 " 80 character wrap and marker
 set wrap linebreak
