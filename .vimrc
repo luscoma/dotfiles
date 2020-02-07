@@ -12,6 +12,7 @@ Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'tomtom/tcomment_vim'
 Plugin 'wincent/command-t'
 Plugin 'scrooloose/nerdtree'
+Plugin 'chrisbra/csv.vim'
 call vundle#end()       
 
 " Base Configuration

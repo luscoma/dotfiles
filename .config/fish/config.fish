@@ -1,5 +1,6 @@
 # User binaries that should be part of the path
 set PATH $PATH ~/bin
+set -x EDITOR vim
 
 # Plugin management (Auto Install Fundle :o)
 if not functions -q fundle; eval (curl -sfL https://git.io/fundle-install); end
