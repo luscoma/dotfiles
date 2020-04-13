@@ -1,0 +1,33 @@
+brew install gpg
+brew install packer
+brew install go
+brew install postgresql
+brew install libpq
+brew install ngrok
+brew install psql
+brew install terraform
+brew install jq
+brew install virtualenv
+brew install moreutils
+brew install csvkit
+brew install dos2unix
+brew install entr
+brew install catimg
+brew install coreutils
+brew install shred
+brew install pandoc
+brew install graphviz
+brew install wget
+brew install jsonnet
+brew install docker
+brew install bundler
+brew install chef
+brew install virtualbox
+brew install git
+brew install vim
+brew install rbenv
+brew install tmux
+brew install nodejs
+brew cask install ngrok
+brew cask install vagrant
+brew cask install chef/chef/chefdk
