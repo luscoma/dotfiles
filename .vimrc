@@ -10,8 +10,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'tomtom/tcomment_vim'
-Plugin 'wincent/command-t'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-eunuch'
 Plugin 'chrisbra/csv.vim'
 Plugin 'google/vim-jsonnet'
 Plugin 'hashivim/vim-terraform'
@@ -84,3 +85,10 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+" Make ctrlp feel like command t
+let g:ctrlp_map = '<leader>t'
+nmap <silent> <leader>b :CtrlPBuffer<CR>
+nmap <silent> <leader>c :CtrlPCurFile<CR>
+let g:ctrlp_reuse_window = 'netrw\|NERD' " reuse nerd tree window
+let g:ctrlp_custom_ignore = { 'dir': 'node_modules' }
