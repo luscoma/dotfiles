@@ -16,6 +16,7 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'chrisbra/csv.vim'
 Plugin 'google/vim-jsonnet'
 Plugin 'hashivim/vim-terraform'
+Plugin 'liuchengxu/vista.vim'
 call vundle#end()       
 
 " Base Configuration
@@ -92,3 +93,15 @@ nmap <silent> <leader>b :CtrlPBuffer<CR>
 nmap <silent> <leader>c :CtrlPCurFile<CR>
 let g:ctrlp_reuse_window = 'netrw\|NERD' " reuse nerd tree window
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules' }
+
+" Configure Vitsa
+let g:vista_default_executive = 'coc'
+let g:vista_sidebar_width = 50
+let g:vista_stay_on_open = 0
+nmap <silent> <leader>v :Vista!!<CR>
+
+" Enable spelling for markdown files and gitcommits
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
+
+
