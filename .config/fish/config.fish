@@ -1,5 +1,6 @@
 # User binaries that should be part of the path
 if not contains ~/bin $PATH; set -a PATH ~/bin; end
+if not contains ~/.local/bin $PATH; set -a PATH ~/.local/bin; end
 set -x EDITOR vim
 
 # Plugin management (Auto Install Fundle :o)
