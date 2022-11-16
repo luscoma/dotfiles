@@ -93,6 +93,7 @@ nmap <silent> <leader>b :CtrlPBuffer<CR>
 nmap <silent> <leader>c :CtrlPCurFile<CR>
 let g:ctrlp_reuse_window = 'netrw\|NERD' " reuse nerd tree window
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules' }
+let g:ctrlp_root_markers = ['.ctrlp']
 
 " Configure Vitsa
 let g:vista_default_executive = 'coc'

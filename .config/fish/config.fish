@@ -9,6 +9,7 @@ fundle plugin 'danhper/fish-ssh-agent'
 fundle plugin 'franciscolourenco/done'
 fundle plugin 'fishpkg/fish-humanize-duration'
 fundle plugin 'oh-my-fish/plugin-thefuck'
+fundle plugin 'dracula/fish'
 fundle init
 
 # Other Initialization
@@ -26,4 +27,3 @@ fish_vi_key_bindings
 set -l exclude_commands '(git (?!push|pull))'  # All gits but push pull
 set -a exclude_commands '(vim)'
 set -U __done_exclude (string join '|' $exclude_commands)
-
