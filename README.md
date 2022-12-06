@@ -40,3 +40,17 @@ With node installed go to `~/config/coc/extensions` and run `npm install`
 
 .gitignore will ignore everything by default so new things must be explicitly
 added. This helps prevent adding things accidently.
+
+## Yabai & SKHD
+To use these install them with brew on MACos
+
+```
+brew install koekeishiya/formulae/yabai
+brew install koekeishiya/formulae/skhd
+brew services start yabai
+brew services start skhd
+```
+
+Note: You might have to do brew edit skhd and set an env variable for SHELL to
+be /bin/bash.  Some of the key bindings do fancy cmd substitution to ensure
+command precedence.
