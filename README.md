@@ -35,6 +35,9 @@ ensure that is installed first.  You can use nvm, the built in package manager
 
 With node installed go to `~/config/coc/extensions` and run `npm install`
 
+Also may need to go into ~/.vim/bundle/coc.nvim and do `git checkout release`
+since the plugin doesn't always do it on install.
+
 
 ## Adding files
 
@@ -54,3 +57,12 @@ brew services start skhd
 Note: You might have to do brew edit skhd and set an env variable for SHELL to
 be /bin/bash.  Some of the key bindings do fancy cmd substitution to ensure
 command precedence.
+
+## Homebrew
+
+There's a brewfile for homebrew to install the bundles.
+
+```
+brew bundle dump --global # Update the brewfile
+brew bundle --global # Install the bewfile
+```
