@@ -66,3 +66,11 @@ There's a brewfile for homebrew to install the bundles.
 brew bundle dump --global # Update the brewfile
 brew bundle --global # Install the bewfile
 ```
+
+## Iterm2 Colors
+
+```
+wget https://raw.githubusercontent.com/dracula/iterm/master/Dracula.itermcolors
+```
+
+Set in iterm2 profile -> color then import this file
