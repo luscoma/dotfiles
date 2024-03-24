@@ -50,8 +50,8 @@ To use these install them with brew on MACos
 ```
 brew install koekeishiya/formulae/yabai
 brew install koekeishiya/formulae/skhd
-brew services start yabai
-brew services start skhd
+yabai --start-service
+skhd --start-service
 ```
 
 Note: You might have to do brew edit skhd and set an env variable for SHELL to
