@@ -5,6 +5,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'fatih/vim-go'
 Plugin 'dag/vim-fish'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
@@ -51,6 +52,9 @@ nnoremap <Leader>]  :tabnext<CR>
 inoremap <C-k> <ESC>
 vnoremap <C-k> <ESC>
 inoremap <C-c> <ESC>
+
+" Setup for vim-go
+let g:go_fmt_command = "goimports"
 
 
 " Use \space for trigger completion.

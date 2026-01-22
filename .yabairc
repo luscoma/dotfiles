@@ -55,8 +55,10 @@ yabai -m config window_gap                   0
 # Disable management of certain windows
 yabai -m rule --add app='^System Information$' manage=off
 yabai -m rule --add app='^System Preferences$' manage=off
+yabai -m rule --add app='^System Settings$' manage=off
 yabai -m rule --add app='^Managed Software Center$' manage=off
 yabai -m rule --add title='Preferences$' manage=off
+yabai -m rule --add title='Tip of the Day' manage=off # IntelliJ
 yabai -m rule --add title='Settings$' manage=off
 yabai -m rule --add app='^Finder$' manage=off
 
