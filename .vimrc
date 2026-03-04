@@ -9,7 +9,6 @@ Plugin 'fatih/vim-go'
 Plugin 'dag/vim-fish'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
-Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'tomtom/tcomment_vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
