@@ -76,20 +76,6 @@ nmap <silent> <leader>rn <Plug>(coc-rename)
 xmap <silent> <leader>f  <Plug>(coc-format-selected)
 nmap <silent> <leader>f  <Plug>(coc-format-selected)
 
-" Highlight the symbol and its references when holding the cursor.
-set updatetime=500
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
-
 " Make ctrlp feel like command t
 let g:ctrlp_map = '<leader>t'
 nmap <silent> <leader>b :CtrlPBuffer<CR>

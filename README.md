@@ -12,6 +12,9 @@ git fetch
 git checkout master
 ```
 
+In cases where a specific ssh key identity is needed set it in the git repo
+prior to fetching with `git config core.sshCommand "ssh -i ~/.ssh/id_key"`.
+
 ## Setup
 
 Some of the packages require a secondary setup
@@ -26,18 +29,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
 Then run vim and run `:PluginInstall`
-
-### CoC Plugin
-
-The CoC Plugin for VIM requires some special setup.  For one it requires node so 
-ensure that is installed first.  You can use nvm, the built in package manager
-(if new enough) or just install node/npm to ~/bin.
-
-With node installed go to `~/config/coc/extensions` and run `npm install`
-
-Also may need to go into ~/.vim/bundle/coc.nvim and do `git checkout release`
-since the plugin doesn't always do it on install.
-
 
 ## Adding files
 
