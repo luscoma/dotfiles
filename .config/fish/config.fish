@@ -9,6 +9,7 @@ fundle plugin 'danhper/fish-ssh-agent'
 fundle plugin 'franciscolourenco/done'
 fundle plugin 'fishpkg/fish-humanize-duration'
 fundle plugin 'dracula/fish'
+fundle plugin 'edc/bass'
 fundle init
 
 # Other Initialization
