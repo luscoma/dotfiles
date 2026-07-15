@@ -63,6 +63,12 @@ exec-on-workspace-change = [
     #run = 'move-node-to-workspace T' # mnemonics T - Terminal
     #run = 'layout floating' # switch to flaoting layout
 
+# Ensure handy is flagged as floating
+[[on-window-detected]]
+    if.app-id = 'com.pais.handy'
+    run = 'layout floating'
+
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
@@ -147,6 +153,8 @@ exec-on-workspace-change = [
     ctrl-cmd-2 = 'workspace 2'
     ctrl-cmd-3 = 'workspace 3'
     ctrl-cmd-4 = 'workspace 4'
+    ctrl-cmd-5 = 'workspace 5'
+    ctrl-cmd-6 = 'workspace 6'
 
     ctrl-cmd-left = 'workspace prev'
     ctrl-cmd-right = 'workspace next'
@@ -156,6 +164,8 @@ exec-on-workspace-change = [
     ctrl-cmd-shift-2 = 'move-node-to-workspace 2'
     ctrl-cmd-shift-3 = 'move-node-to-workspace 3'
     ctrl-cmd-shift-4 = 'move-node-to-workspace 4'
+    ctrl-cmd-shift-5 = 'move-node-to-workspace 5'
+    ctrl-cmd-shift-6 = 'move-node-to-workspace 6'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     ctrl-cmd-backtick = 'workspace-back-and-forth'
