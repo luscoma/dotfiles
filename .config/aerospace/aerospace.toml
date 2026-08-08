@@ -128,10 +128,10 @@ exec-on-workspace-change = [
     ctrl-cmd-comma = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    ctrl-cmd-h = 'focus left'
-    ctrl-cmd-j = 'focus down'
-    ctrl-cmd-k = 'focus up'
-    ctrl-cmd-l = 'focus right'
+    ctrl-cmd-h = 'focus --boundaries-action wrap-around-the-workspace left'
+    ctrl-cmd-j = 'focus --boundaries-action wrap-around-the-workspace down'
+    ctrl-cmd-k = 'focus --boundaries-action wrap-around-the-workspace up'
+    ctrl-cmd-l = 'focus --boundaries-action wrap-around-the-workspace right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     ctrl-cmd-shift-h = 'move left'

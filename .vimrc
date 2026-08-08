@@ -24,7 +24,7 @@ filetype plugin indent on
 syntax on
 set shell=/bin/bash  " I use fish so use bash from vim
 set number
-colorscheme dracula
+silent! colorscheme dracula
 set fo+=j  " remove comment leader when joining comments
 set fo-=o  " don't insert the comment symbol on o & O
 set incsearch
